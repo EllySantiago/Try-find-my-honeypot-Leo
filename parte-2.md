@@ -1,0 +1,10 @@
+# 🌹 Parte 2 — fevereiro
+
+*enquanto conhecia esse rapaz ela tinha tantas coisas na cabeça, tantos sonhos, assassinados pela realidade da vida e do tempo, mas ela não desistiu, quis ser professora no passado e não conseguiu, apos ser traida reganhou um amor pelas artes, um amor pela musica, desenho e literatura que havia esquecido, como se estivesse adormecido em sua alma. ela sonhava em fazer tudo dar certo na faculdade e dava seu melhor pra isso, theresa desejava fazer tudo dar certo, com o corpo quebrado e destruído depois de chorar e não dormir por muito tempo enquanto se recuperava de um amor vazio, ela se perguntou por muito tempo, o que fiz pra merecer ser traída e descartada? o que fiz pra ser substituida como se faz com uma roupa? por muitos meses ela achou que o problema era ela que não era suficiente, tentou por muito tempo, entender a lógica de algo que não havia lógica até finalmente aceitar: porquê você não é ela.*
+
+*foi uma verdade cruel de ler durante seus estudos e pesquisas de literatura, mas era o mal necessário, com o tempo ela entendeu ‘eu não sou ela’ e isso nao era um fardo, era um fato, e incrivelmente ela passou a ver isso como positivo, ela agradeceu por ter sido abandonada enquanto tinha tempo sobrando pra se reconstruir, que baque teria sido subir ao altar da igreja pra sempre com alguém que era talvez? a dor que ela teve foi bem menor naquele momento, ela não perdeu nada que não pudesse ser recuperado e acima de tudo ser traída não diminuiu seu merecimento nem seu valor ‘eu não sou ela!’, mais uma vez o eco da frase, foi tão libertador, ela percebeu, era livre , ela podia escolher quem seria dali pra frente.*
+
+*Sofrimento só era a prova que tudo aquilo aconteceu, que foi verdade, que ela amou, se não se importasse não teria doído tanto, isso lhe tornava humana, apenas isso, ela tentou de tudo, teve a certeza de tentar, pra saber que daria errado ela tentou todas as possibilidades que tinha.*
+
+---
+[← Parte 1](parte-1.md) · [📖 Índice](../README.md#-ls-historias) · [Parte 3 →](parte-3.md)
