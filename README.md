@@ -42,7 +42,7 @@ rosita@coquette-term:~$ entrar ▌
 ## 🖥 Terminal interativo
 
 Com comandos, sons, estações (pétalas, estrelinhas, vaga-lumes…) e temas:
-**[abrir o terminal](https://SEU-USUARIO.github.io/NOME-DO-REPO/)**
+**[abrir o terminal](https://EllySantiago.github.io/Try-find-my-honeypot-Leo/)**
 
 | comando | o que faz |
 |---|---|
