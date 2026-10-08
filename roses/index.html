@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Coquette ~ Diário de Histórias</title>
+    <!-- Tailwind CSS for responsive layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Sacramento&family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-crt { font-family: 'VT323', 'Fira Code', monospace; }
+        .font-coquette-header { font-family: 'Playfair Display', serif; }
+        .font-script { font-family: 'Sacramento', cursive; }
+
+        /* Light & Delicate Coquette Vintage Background Pattern */
+        body {
+            background-color: #fcf0f3;
+            background-image: 
+                radial-gradient(#eec0c9 1.2px, transparent 1.2px), 
+                radial-gradient(#eec0c9 1.2px, #fcf0f3 1.2px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+            color: #4a1525;
+            overflow-x: hidden;
+        }
+
+        /* Particle Canvas Overlay */
+        #falling-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        /* CRT Monitor Cabinet Styling */
+        .crt-monitor-frame {
+            background: linear-gradient(145deg, #fff3f5, #f5d3da);
+            box-shadow: 
+                0 25px 50px rgba(100, 20, 40, 0.25),
+                inset 0 3px 6px rgba(255, 255, 255, 0.9),
+                inset 0 -6px 12px rgba(160, 30, 60, 0.15),
+                0 0 0 4px #800f2f,
+                0 0 0 10px #fcf0f3;
+        }
+
+        .crt-bezel-ring {
+            background: #14050a;
+            box-shadow: 
+                inset 0 0 22px rgba(0, 0, 0, 0.95),
+                inset 0 0 8px rgba(200, 29, 37, 0.3),
+                0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* CRT Themes */
+        .theme-rosa {
+            --term-bg: #180911;
+            --term-text: #ffb3c6;
+            --term-glow: rgba(255, 179, 198, 0.65);
+            --term-header: #ff4d6d;
+            --term-dim: #a83254;
+            --term-border: #4d0f22;
+        }
+
+        .theme-carmesim {
+            --term-bg: #140205;
+            --term-text: #ff3b5c;
+            --term-glow: rgba(255, 59, 92, 0.8);
+            --term-header: #ff758f;
+            --term-dim: #990f26;
+            --term-border: #590314;
+        }
+
+        .theme-amber {
+            --term-bg: #170d07;
+            --term-text: #ffb703;
+            --term-glow: rgba(255, 183, 3, 0.7);
+            --term-header: #fb8500;
+            --term-dim: #a35900;
+            --term-border: #4a2800;
+        }
+
+        .theme-esmeralda {
+            --term-bg: #071710;
+            --term-text: #70e000;
+            --term-glow: rgba(112, 224, 0, 0.7);
+            --term-header: #38b000;
+            --term-dim: #237a00;
+            --term-border: #0d3810;
+        }
+
+        .crt-screen-content {
+            background-color: var(--term-bg);
+            color: var(--term-text);
+            text-shadow: 0 0 7px var(--term-glow);
+            transition: background-color 0.4s ease, color 0.4s ease;
+            border: 2px solid var(--term-border);
+        }
+
+        /* CRT Scanlines and Glare */
+        .scanlines {
+            position: relative;
+            overflow: hidden;
+        }
+        .scanlines::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(
+                rgba(18, 16, 16, 0) 50%, 
+                rgba(0, 0, 0, 0.35) 50%
+            ), linear-gradient(
+                90deg,
+                rgba(255, 0, 0, 0.03),
+                rgba(0, 255, 0, 0.01),
+                rgba(0, 0, 255, 0.03)
+            );
+            z-index: 20;
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+        }
+
+        .crt-glare {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(
+                135deg, 
+                rgba(255,255,255,0.1) 0%, 
+                rgba(255,255,255,0.02) 35%, 
+                transparent 60%
+            );
+            pointer-events: none;
+            z-index: 21;
+            border-radius: inherit;
+        }
+
+        @keyframes subtleFlicker {
+            0% { opacity: 0.985; }
+            50% { opacity: 1; }
+            52% { opacity: 0.96; }
+            54% { opacity: 1; }
+            80% { opacity: 0.99; }
+            100% { opacity: 0.985; }
+        }
+        .crt-flicker {
+            animation: subtleFlicker 0.18s infinite;
+        }
+
+        #term-output::-webkit-scrollbar {
+            width: 6px;
+        }
+        #term-output::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        #term-output::-webkit-scrollbar-thumb {
+            background: var(--term-dim);
+            border-radius: 3px;
+        }
+
+        .rose-svg-shadow {
+            filter: drop-shadow(0px 6px 10px rgba(140, 20, 50, 0.35));
+        }
+
+        .btn-pill-active {
+            background-color: #c81d25 !important;
+            color: #ffffff !important;
+            border-color: #ff758f !important;
+            box-shadow: 0 0 10px rgba(200, 29, 37, 0.4);
+        }
+
+        .led-on {
+            background-color: #ff0033;
+            box-shadow: 0 0 10px #ff0033, inset 0 1px 2px #ffffff;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-3 md:p-6 selection:bg-rose-900 selection:text-pink-200">
+
+    <!-- Falling Particle Canvas Overlay -->
+    <canvas id="falling-canvas"></canvas>
+
+    <!-- Top Coquette Controls Bar -->
+    <header class="w-full max-w-4xl z-20 my-2">
+        <div class="bg-white/80 backdrop-blur-md rounded-2xl p-3 border-2 border-rose-200 shadow-lg flex flex-wrap items-center justify-between gap-3 text-rose-950">
+            
+            <div class="flex items-center gap-2">
+                <span class="text-xl">🌹</span>
+                <div>
+                    <h1 class="font-coquette-header text-lg md:text-xl font-bold leading-tight text-rose-900">
+                        Terminal CRT Coquette
+                    </h1>
+                    <p class="text-xs text-rose-700 italic font-script text-base leading-none">
+                        Cantinho de Histórias & Segredos
+                    </p>
+                </div>
+            </div>
+
+            <!-- Four Seasons Particle Selection -->
+            <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-xs font-bold text-rose-800 uppercase tracking-wider mr-1">Estação:</span>
+                <button id="s-petalas" onclick="setSeason('petalas')" class="btn-pill-active text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    🌹 Pétalas
+                </button>
+                <button id="s-dente" onclick="setSeason('dente')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    🌼 Dente-de-Leão
+                </button>
+                <button id="s-outono" onclick="setSeason('outono')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    🍂 Outono
+                </button>
+                <button id="s-estrelas" onclick="setSeason('estrelas')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    ⭐ Estrelinha
+                </button>
+                <button id="s-vagalumes" onclick="setSeason('vagalumes')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    ✨ Vaga-lumes
+                </button>
+                <button id="s-inverno" onclick="setSeason('inverno')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    ❄️ Neve
+                </button>
+                <button id="s-none" onclick="setSeason('none')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    ✨ Limpo
+                </button>
+            </div>
+
+            <!-- Soundtrack Audio Selector -->
+            <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-xs font-bold text-rose-800 uppercase tracking-wider mr-1">Trilha:</span>
+                <button id="m-box" onclick="toggleAudio('musicbox')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    🎵 Caixinha
+                </button>
+                <button id="m-rain" onclick="toggleAudio('rain')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    🌧️ Chuva
+                </button>
+                <button id="m-lofi" onclick="toggleAudio('lofi')" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-50 border border-rose-300 text-rose-900 hover:bg-rose-100 transition-all">
+                    🎹 Lofi
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MAIN CRT MONITOR UNIT -->
+    <main class="relative w-full max-w-4xl my-auto z-20">
+
+        <!-- Decorative Red Roses & Silk Ribbons (SVG Overlays) -->
+        <div class="absolute -top-8 -left-8 md:-top-10 md:-left-10 z-30 pointer-events-none rose-svg-shadow w-28 md:w-40">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 185 Q 45 105 125 45 T 195 15" stroke="#2d5a27" stroke-width="6" stroke-linecap="round"/>
+                <path d="M45 115 C 25 95, 15 125, 45 115 Z" fill="#3a7d34"/>
+                <path d="M95 65 C 85 35, 115 45, 95 65 Z" fill="#2d5a27"/>
+                <g transform="translate(110, 65) scale(0.8)">
+                    <path d="M-20 0 C-40 -30 -60 0 -20 10 C-60 20 -40 50 -20 0 Z" fill="#c81d25"/>
+                    <path d="M20 0 C40 -30 60 0 20 10 C60 20 40 50 20 0 Z" fill="#c81d25"/>
+                    <ellipse cx="0" cy="2" rx="8" ry="7" fill="#800f2f"/>
+                    <path d="M-5 8 L-25 45 L-10 40 L-2 10 Z" fill="#a1161d"/>
+                    <path d="M5 8 L25 45 L10 40 L2 10 Z" fill="#a1161d"/>
+                </g>
+                <g transform="translate(40, 155) scale(0.85)">
+                    <circle cx="0" cy="0" r="18" fill="#800f2f"/>
+                    <circle cx="-3" cy="-3" r="13" fill="#c81d25"/>
+                    <circle cx="2" cy="2" r="8" fill="#ff4d6d"/>
+                    <circle cx="0" cy="0" r="4" fill="#ffccd5"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="absolute -top-8 -right-8 md:-top-10 md:-right-10 z-30 pointer-events-none rose-svg-shadow w-28 md:w-40 transform scale-x-[-1]">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 185 Q 45 105 125 45 T 195 15" stroke="#2d5a27" stroke-width="6" stroke-linecap="round"/>
+                <path d="M45 115 C 25 95, 15 125, 45 115 Z" fill="#3a7d34"/>
+                <g transform="translate(110, 65) scale(0.8)">
+                    <path d="M-20 0 C-40 -30 -60 0 -20 10 C-60 20 -40 50 -20 0 Z" fill="#c81d25"/>
+                    <path d="M20 0 C40 -30 60 0 20 10 C60 20 40 50 20 0 Z" fill="#c81d25"/>
+                    <ellipse cx="0" cy="2" rx="8" ry="7" fill="#800f2f"/>
+                </g>
+                <g transform="translate(40, 155) scale(0.85)">
+                    <circle cx="0" cy="0" r="18" fill="#800f2f"/>
+                    <circle cx="-3" cy="-3" r="13" fill="#c81d25"/>
+                    <circle cx="2" cy="2" r="8" fill="#ff4d6d"/>
+                </g>
+            </svg>
+        </div>
+
+        <!-- CRT CABINET FRAME -->
+        <div class="crt-monitor-frame rounded-[2.5rem] p-4 md:p-8 relative">
+            
+            <div class="flex items-center justify-between mb-3 px-2">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-rose-400 border border-rose-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-pink-300 border border-rose-400"></span>
+                    <span class="w-3 h-3 rounded-full bg-red-400 border border-rose-500"></span>
+                </div>
+                <div class="font-coquette-header text-xs md:text-sm tracking-widest text-rose-900 font-bold uppercase flex items-center gap-1">
+                    <span>✿</span> COQUETTE CRT-2000 <span>✿</span>
+                </div>
+                <div class="text-xs font-crt text-rose-800 bg-rose-100 px-2.5 py-0.5 rounded-full border border-rose-300 font-semibold">
+                    VGA MONO
+                </div>
+            </div>
+
+            <!-- CRT BEZEL & SCREEN -->
+            <div class="crt-bezel-ring rounded-2xl p-3 md:p-5 relative scanlines">
+                <div class="crt-glare"></div>
+
+                <div id="crt-screen" class="crt-screen-content theme-rosa crt-flicker rounded-xl p-3 md:p-5 h-[360px] md:h-[430px] flex flex-col justify-between overflow-hidden relative">
+                    
+                    <!-- Terminal Log Output -->
+                    <div id="term-output" class="font-crt text-lg md:text-xl leading-relaxed overflow-y-auto pr-1 flex-1 space-y-1.5">
+                        <!-- CLI Lines dynamically added -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Physical Monitor Controls -->
+            <div class="mt-4 pt-2 border-t border-rose-200 flex flex-wrap items-center justify-between gap-3 text-xs md:text-sm text-rose-900 font-medium">
+                
+                <div class="flex items-center gap-3">
+                    <button id="btn-power" onclick="togglePower()" class="flex items-center gap-2 bg-rose-100 hover:bg-rose-200 border border-rose-300 active:scale-95 transition-all px-3 py-1.5 rounded-full shadow-xs">
+                        <div id="power-led" class="w-3 h-3 rounded-full led-on transition-all"></div>
+                        <span class="font-bold text-rose-950 text-xs">POWER</span>
+                    </button>
+                    <span id="screen-status" class="text-xs text-rose-800 italic hidden sm:inline">CRT Online • 60Hz</span>
+                </div>
+
+                <div class="flex items-center gap-2 bg-white/90 px-3 py-1 rounded-full border border-rose-200">
+                    <span class="text-xs font-bold text-rose-900">TEMAS:</span>
+                    <button onclick="setTheme('rosa')" class="w-5 h-5 rounded-full bg-pink-400 border-2 border-white hover:scale-110 transition-transform shadow-xs" title="Rosa Coquette"></button>
+                    <button onclick="setTheme('carmesim')" class="w-5 h-5 rounded-full bg-red-600 border-2 border-white hover:scale-110 transition-transform shadow-xs" title="Carmesim Clássico"></button>
+                    <button onclick="setTheme('amber')" class="w-5 h-5 rounded-full bg-amber-500 border-2 border-white hover:scale-110 transition-transform shadow-xs" title="Âmbar Retrô"></button>
+                    <button onclick="setTheme('esmeralda')" class="w-5 h-5 rounded-full bg-emerald-500 border-2 border-white hover:scale-110 transition-transform shadow-xs" title="Esmeralda"></button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- QUICK ACTIONS TOOLBAR -->
+    <footer class="w-full max-w-4xl my-3 z-20">
+        <div class="bg-white/80 backdrop-blur-md rounded-2xl p-2.5 border border-rose-200 shadow-md flex flex-wrap items-center justify-center gap-2 text-xs md:text-sm font-semibold text-rose-900">
+            <span class="text-rose-700 text-xs hidden md:inline">Atalhos:</span>
+            <button onclick="runQuick('ls historias')" class="px-3 py-1 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-xl shadow-xs transition-transform active:scale-95 flex items-center gap-1">
+                📂 ls historias
+            </button>
+<span id="quick-parts" class="contents"></span>
+            <button onclick="runQuick('voltar')" class="px-3 py-1 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-xl shadow-xs transition-transform active:scale-95 flex items-center gap-1">
+                🔄 Voltar (Zerar)
+            </button>
+            <button onclick="runQuick('ajuda')" class="px-3 py-1 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-xl shadow-xs transition-transform active:scale-95 flex items-center gap-1">
+                ❓ Ajuda
+            </button>
+        </div>
+        <p class="text-center text-xs text-rose-800 mt-2 font-coquette-header italic font-semibold">
+            Feito com 🌹 e laços de fita de cetim • Clique nos botões acima para interagir!
+        </p>
+    </footer>
+
+    <script src="historias.js"></script>
+    <script>
+        /* ===================================================
+           1. FALLING PARTICLES ENGINE (4 SEASONS)
+        =================================================== */
+        const canvas = document.getElementById('falling-canvas');
+        const ctx = canvas.getContext('2d');
+        let currentSeason = 'petalas'; // 'petalas', 'dente', 'outono', 'inverno', 'none'
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function initParticles() {
+            particles = [];
+            if (currentSeason === 'none') return;
+
+            const count = 38;
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 8 + 5,
+                    speedY: Math.random() * 1.1 + 0.5,
+                    speedX: Math.random() * 0.8 - 0.4,
+                    rotation: Math.random() * Math.PI * 2,
+                    rotSpeed: (Math.random() - 0.5) * 0.03,
+                    opacity: Math.random() * 0.5 + 0.4,
+                    color: getRandomParticleColor()
+                });
+            }
+        }
+
+        function getRandomParticleColor() {
+            if (currentSeason === 'outono') {
+                const colors = ['#e76f51', '#d4a373', '#b85b14', '#2a9d8f'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+            if (currentSeason === 'estrelas') return ['#fff3b0','#ffd6e0','#ffffff'][Math.floor(Math.random()*3)];
+            if (currentSeason === 'vagalumes') return ['#e9ff70','#ffe66d'][Math.floor(Math.random()*2)];
+            return '#ffffff';
+        }
+
+        function drawParticle(p) {
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.rotation);
+            ctx.globalAlpha = p.opacity;
+
+            if (currentSeason === 'petalas') {
+                // Red Rose Petals
+                ctx.beginPath();
+                ctx.fillStyle = '#c81d25';
+                ctx.moveTo(0, 0);
+                ctx.bezierCurveTo(-p.size, -p.size, -p.size * 1.5, p.size / 2, 0, p.size * 1.5);
+                ctx.bezierCurveTo(p.size * 1.5, p.size / 2, p.size, -p.size, 0, 0);
+                ctx.fill();
+
+            } else if (currentSeason === 'dente') {
+                // Dandelion Seeds (White soft fuzz with green stem)
+                // Green Stem
+                ctx.strokeStyle = '#588157';
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(0, p.size * 1.5);
+                ctx.stroke();
+
+                // Fuzz Rays
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.85)';
+                ctx.lineWidth = 1;
+                for (let a = 0; a < Math.PI * 2; a += Math.PI / 4) {
+                    ctx.beginPath();
+                    ctx.moveTo(0, 0);
+                    ctx.lineTo(Math.cos(a) * p.size, Math.sin(a) * p.size);
+                    ctx.stroke();
+                }
+
+                // Center fluff dot
+                ctx.fillStyle = '#ffffff';
+                ctx.beginPath();
+                ctx.arc(0, 0, p.size / 2.5, 0, Math.PI * 2);
+                ctx.fill();
+
+            } else if (currentSeason === 'outono') {
+                // Autumn Leaves
+                ctx.beginPath();
+                ctx.fillStyle = p.color;
+                ctx.ellipse(0, 0, p.size / 2, p.size * 1.3, Math.PI / 4, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Leaf Center Vein
+                ctx.strokeStyle = 'rgba(0,0,0,0.2)';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(0, -p.size);
+                ctx.lineTo(0, p.size);
+                ctx.stroke();
+
+            } else if (currentSeason === 'estrelas') {
+                // Estrelinha caída: estrela de 4 pontas com rastro
+                ctx.fillStyle = p.color;
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 10;
+                const r = p.size * 0.9;
+                ctx.beginPath();
+                for (let k = 0; k < 8; k++) {
+                    const ang = k * Math.PI / 4;
+                    const rad = k % 2 === 0 ? r : r / 3.2;
+                    ctx.lineTo(Math.cos(ang) * rad, Math.sin(ang) * rad);
+                }
+                ctx.closePath();
+                ctx.fill();
+                ctx.rotate(-p.rotation);
+                const grad = ctx.createLinearGradient(0, 0, -r * 3, -r * 3);
+                grad.addColorStop(0, p.color);
+                grad.addColorStop(1, 'rgba(255,255,255,0)');
+                ctx.strokeStyle = grad;
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(-r * 3, -r * 3);
+                ctx.stroke();
+
+            } else if (currentSeason === 'vagalumes') {
+                // Vaga-lumes piscando
+                const pulse = 0.5 + 0.5 * Math.sin(Date.now() / 400 + p.x);
+                ctx.globalAlpha = p.opacity * pulse;
+                ctx.fillStyle = p.color;
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 14;
+                ctx.beginPath();
+                ctx.arc(0, 0, p.size / 3, 0, Math.PI * 2);
+                ctx.fill();
+
+            } else if (currentSeason === 'inverno') {
+                // Winter Snowflakes / White glowing dots
+                ctx.beginPath();
+                ctx.fillStyle = '#ffffff';
+                ctx.shadowColor = '#ffffff';
+                ctx.shadowBlur = 6;
+                ctx.arc(0, 0, p.size / 1.8, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            ctx.restore();
+        }
+
+        function updateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (currentSeason !== 'none') {
+                particles.forEach(p => {
+                    if (currentSeason === 'estrelas') { p.y += p.speedY * 1.6; p.x += p.speedY * 1.2; }
+                    else if (currentSeason === 'vagalumes') { p.y -= p.speedY * 0.25; p.x += Math.sin(Date.now() / 900 + p.y * 0.02) * 0.6; }
+                    else { p.y += p.speedY; p.x += Math.sin(p.y * 0.01) * p.speedX; }
+                    p.rotation += p.rotSpeed;
+
+                    if (p.y > canvas.height + 20 || p.x > canvas.width + 40 || p.y < -30) {
+                        p.y = currentSeason === 'vagalumes' ? canvas.height + 20 : -20;
+                        p.x = Math.random() * canvas.width;
+                    }
+                    drawParticle(p);
+                });
+            }
+            requestAnimationFrame(updateParticles);
+        }
+
+        function setSeason(seasonName) {
+            currentSeason = seasonName;
+            
+            document.querySelectorAll('[id^="s-"]').forEach(btn => btn.classList.remove('btn-pill-active'));
+            const activeBtn = document.getElementById(`s-${seasonName}`);
+            if (activeBtn) activeBtn.classList.add('btn-pill-active');
+
+            initParticles();
+            printToTerminal(`\n[ 🌸 Estação alterada para: ${seasonName.toUpperCase()} ]`);
+        }
+
+        initParticles();
+        updateParticles();
+
+        /* ===================================================
+           2. SYNTHESIZER AUDIO ENGINE (100% OFFLINE)
+        =================================================== */
+        let audioCtx = null;
+        let activeTrack = null;
+        let audioInterval = null;
+
+        function initAudioContext() {
+            if (!audioCtx) {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContext();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        function playKeyClickSound() {
+            initAudioContext();
+            if (!audioCtx) return;
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(500 + Math.random() * 200, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.015, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.035);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.04);
+            } catch(e){}
+        }
+
+        function playSecretUnlockSound() {
+            initAudioContext();
+            if (!audioCtx) return;
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(220, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.4);
+                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.45);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.45);
+            } catch(e){}
+        }
+
+        function toggleAudio(trackName) {
+            initAudioContext();
+
+            if (activeTrack === trackName) {
+                stopAudio();
+                printToTerminal(`\n[ 🎵 Trilha sonora desligada. ]`);
+                return;
+            }
+
+            stopAudio();
+            activeTrack = trackName;
+
+            document.querySelectorAll('[id^="m-"]').forEach(b => b.classList.remove('btn-pill-active'));
+
+            if (trackName === 'musicbox') {
+                document.getElementById('m-box').classList.add('btn-pill-active');
+                printToTerminal(`\n[ 🎵 Tocando: Caixinha de Música Romântica ]`);
+                const notes = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 659.25];
+                audioInterval = setInterval(() => {
+                    if (!audioCtx) return;
+                    const note = notes[Math.floor(Math.random() * notes.length)];
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.type = 'triangle';
+                    osc.frequency.value = note;
+                    gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.2);
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 1.25);
+                }, 550);
+
+            } else if (trackName === 'rain') {
+                document.getElementById('m-rain').classList.add('btn-pill-active');
+                printToTerminal(`\n[ 🌧️ Tocando: Chuva Suave no Jardim ]`);
+                const bufferSize = audioCtx.sampleRate * 2;
+                const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = Math.random() * 2 - 1;
+                }
+                const noise = audioCtx.createBufferSource();
+                noise.buffer = buffer;
+                noise.loop = true;
+
+                const filter = audioCtx.createBiquadFilter();
+                filter.type = 'lowpass';
+                filter.frequency.value = 750;
+
+                const gain = audioCtx.createGain();
+                gain.gain.value = 0.05;
+
+                noise.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+                noise.start();
+
+                audioInterval = { stop: () => noise.stop() };
+
+            } else if (trackName === 'lofi') {
+                document.getElementById('m-lofi').classList.add('btn-pill-active');
+                printToTerminal(`\n[ 🎹 Tocando: Lofi Acalentador ]`);
+                const chords = [
+                    [261.63, 329.63, 392.00, 493.88],
+                    [220.00, 261.63, 329.63, 392.00],
+                    [174.61, 220.00, 261.63, 329.63]
+                ];
+                let chordStep = 0;
+                audioInterval = setInterval(() => {
+                    if (!audioCtx) return;
+                    const chord = chords[chordStep % chords.length];
+                    chord.forEach(freq => {
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+                        osc.type = 'sine';
+                        osc.frequency.value = freq;
+                        gain.gain.setValueAtTime(0.035, audioCtx.currentTime);
+                        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 2.6);
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+                        osc.start();
+                        osc.stop(audioCtx.currentTime + 2.7);
+                    });
+                    chordStep++;
+                }, 2800);
+            }
+        }
+
+        function stopAudio() {
+            if (audioInterval) {
+                if (typeof audioInterval === 'number') clearInterval(audioInterval);
+                else if (audioInterval.stop) audioInterval.stop();
+                audioInterval = null;
+            }
+            activeTrack = null;
+            document.querySelectorAll('[id^="m-"]').forEach(b => b.classList.remove('btn-pill-active'));
+        }
+
+        /* ===================================================
+           3. TERMINAL CLI ENGINE & STORIES
+        =================================================== */
+        const termOutput = document.getElementById('term-output');
+        const crtScreen = document.getElementById('crt-screen');
+        let promptUsername = 'rosita';
+        let isTyping = false;
+        let commandHistory = [];
+        let historyIdx = -1;
+        let diabreteUnlocked = false;
+
+        const MESES = ['janeiro','fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+        const MESES_BONITOS = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+        let parteAtual = 0;
+        let skipRequested = false;
+
+        function getPrompt() {
+            return `${promptUsername}@coquette-term:~$ `;
+        }
+
+        function initWelcomeScreen() {
+            termOutput.innerHTML = '';
+            printToTerminal('✨ Bem-vindo ao Terminal CRT Coquette v2.0 ✨', 'font-bold text-rose-300');
+            printToTerminal('------------------------------------------------', 'opacity-60');
+            printToTerminal('“hoje vou lhes contar uma historia, de uma pequena menina antes de encontrar um estrelinha caida. quer ouvir uma história? ”', 'italic text-pink-200 my-1');
+            printToTerminal('');
+            printToTerminal("Digite 'ls historias' para ver a lista de partes.");
+            printToTerminal("Tem um segredo escondido... digite 'entrar <codinome>' se souber.");
+            printToTerminal('Digite \'ajuda\' para listar todos os comandos.');
+            printToTerminal('');
+            createInputLine();
+        }
+
+        function printToTerminal(text, customClasses = '') {
+            const line = document.createElement('div');
+            line.className = `whitespace-pre-wrap leading-relaxed ${customClasses}`;
+            line.textContent = text;
+            termOutput.appendChild(line);
+            scrollToBottom();
+            return line;
+        }
+
+        function scrollToBottom() {
+            crtScreen.scrollTop = crtScreen.scrollHeight;
+        }
+
+        function createInputLine() {
+            const existing = document.getElementById('input-line-container');
+            if (existing) existing.remove();
+
+            const container = document.createElement('div');
+            container.id = 'input-line-container';
+            container.className = 'flex items-center gap-2 mt-2 pt-1 border-t border-rose-900/40';
+
+            const promptSpan = document.createElement('span');
+            promptSpan.className = 'font-bold text-rose-400 select-none shrink-0';
+            promptSpan.textContent = getPrompt();
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.id = 'cli-input';
+            input.className = 'w-full bg-transparent outline-none border-none text-inherit font-crt text-lg md:text-xl p-0 focus:ring-0';
+            input.autocomplete = 'off';
+            input.spellcheck = false;
+
+            container.appendChild(promptSpan);
+            container.appendChild(input);
+            termOutput.appendChild(container);
+
+            input.focus();
+            scrollToBottom();
+
+            input.addEventListener('keydown', (e) => {
+                playKeyClickSound();
+
+                if (e.key === 'Enter') {
+                    const cmd = input.value.trim();
+                    if (cmd) {
+                        commandHistory.push(cmd);
+                        historyIdx = commandHistory.length;
+                    }
+                    container.remove();
+                    printToTerminal(getPrompt() + cmd, 'font-bold text-rose-300');
+                    handleCommand(cmd);
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    if (historyIdx > 0) {
+                        historyIdx--;
+                        input.value = commandHistory[historyIdx];
+                    }
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    if (historyIdx < commandHistory.length - 1) {
+                        historyIdx++;
+                        input.value = commandHistory[historyIdx];
+                    } else {
+                        historyIdx = commandHistory.length;
+                        input.value = '';
+                    }
+                }
+            });
+        }
+
+        crtScreen.addEventListener('click', () => {
+            const input = document.getElementById('cli-input');
+            if (input) input.focus();
+        });
+
+        function runQuick(cmdText) {
+            const input = document.getElementById('cli-input');
+            if (input) {
+                input.value = cmdText;
+                const e = new KeyboardEvent('keydown', { key: 'Enter' });
+                input.dispatchEvent(e);
+            } else {
+                handleCommand(cmdText);
+            }
+        }
+
+        function norm(t) {
+            return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim();
+        }
+
+        function descobrirParte(alvo) {
+            const t = norm(alvo).replace(/^historias\//, '').replace(/\s+/g, '');
+            let m = t.match(/^parte(\d{1,2})/);
+            if (m) return parseInt(m[1], 10);
+            const idx = MESES.findIndex(mes => t === mes || t.endsWith(mes));
+            return idx >= 0 ? idx + 1 : null;
+        }
+
+        function listarHistorias() {
+            let linhas = ['historias:'];
+            for (let n = 1; n <= 12; n++) {
+                const pronta = HISTORIAS.partes[String(n)];
+                linhas.push(`  parte ${n} ${MESES_BONITOS[n - 1]}${pronta ? '  ✿' : ''}`);
+            }
+            if (diabreteUnlocked) linhas.push(`  [🔒 SECRETO] ${segredoNome}`);
+            printToTerminal(linhas.join('\n'));
+            printToTerminal("\n💡 Para ler: cd historias/parte1  (ou cd historias/janeiro)\n   ✿ = já escrita. As outras chegam com o tempo.", 'text-rose-400 text-sm');
+        }
+
+        function lerParte(n) {
+            const texto = HISTORIAS.partes[String(n)];
+            if (!texto) {
+                printToTerminal(`\n📜 A parte ${n} (${MESES_BONITOS[n - 1]}) ainda está sendo escrita com carinho no caderno de memórias... em breve! 🌹\n`, 'italic text-pink-300');
+                createInputLine();
+                return;
+            }
+            parteAtual = n;
+            printToTerminal(`\n📖 Parte ${n} — ${MESES_BONITOS[n - 1]}\n`, 'font-bold text-rose-300');
+            typewriterPrint(texto, () => {
+                const dica = HISTORIAS.partes[String(n + 1)] ? "Digite 'proximo' para continuar." : "Digite 'ls historias' para voltar à lista.";
+                printToTerminal(dica + '\n', 'text-rose-400 text-sm');
+                createInputLine();
+            });
+        }
+
+        let segredoNome = null, segredoTexto = null;
+
+        async function decifrarSegredo(codinome) {
+            const bin = (b64) => Uint8Array.from(atob(b64), ch => ch.charCodeAt(0));
+            const sec = HISTORIAS.secreto;
+            const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(codinome), 'PBKDF2', false, ['deriveKey']);
+            const chave = await crypto.subtle.deriveKey(
+                { name: 'PBKDF2', salt: bin(sec.salt), iterations: 150000, hash: 'SHA-256' },
+                base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+            const claro = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bin(sec.iv) }, chave, bin(sec.data));
+            return new TextDecoder().decode(claro);
+        }
+
+        async function destravar(nome) {
+            isTyping = true;
+            try {
+                if (!window.crypto || !crypto.subtle) throw new Error('sem-crypto');
+                segredoTexto = await decifrarSegredo(nome);
+                segredoNome = nome;
+                diabreteUnlocked = true;
+                promptUsername = nome.replace(/\s+/g, '');
+                playSecretUnlockSound();
+                printToTerminal(`\n😈 [CODINOME ACEITO: ${nome.toUpperCase()}]`, 'font-bold text-red-400 text-xl');
+                printToTerminal('Um arquivo escondido foi desbloqueado... seu nome agora é outro.', 'text-rose-300 font-semibold');
+                printToTerminal(`Use 'cd historias/${nome}' para abrir.\n`, 'text-amber-300 font-bold');
+            } catch (e) {
+                if (e.message === 'sem-crypto') printToTerminal('⚠️ Seu navegador só abre o segredo em https:// (GitHub Pages) ou localhost.');
+                else printToTerminal(`🔒 O codinome '${nome}' não abre nenhuma porta por aqui.`);
+            }
+            isTyping = false;
+            createInputLine();
+        }
+
+        function lerSecreto() {
+            printToTerminal('\n😈 Abrindo o arquivo secreto...\n', 'font-bold text-red-400');
+            typewriterPrint(segredoTexto, () => createInputLine());
+        }
+
+        function handleCommand(rawCmd) {
+            if (isTyping) return;
+            const cmd = rawCmd.trim();
+            const c = norm(cmd);
+
+            // Codinome secreto: "entrar <codinome>" ou "codinome: <codinome>"
+            const mCod = c.match(/^(entrar|codinome)\s*[:=]?\s*(.+)$/);
+            if (mCod) {
+                destravar(mCod[2]);
+                return;
+            }
+
+            if (['voltar', 'clear', 'limpar'].includes(c)) { parteAtual = 0; initWelcomeScreen(); return; }
+
+            if (c === 'ls' || c === 'ls historias') { listarHistorias(); createInputLine(); return; }
+
+            if (c === 'proximo' || c === 'proxima' || c === 'anterior') {
+                const alvo = c === 'anterior' ? parteAtual - 1 : parteAtual + 1;
+                if (alvo < 1 || alvo > 12) {
+                    printToTerminal("Não há outra parte nessa direção. Use 'ls historias'.");
+                    createInputLine();
+                } else lerParte(alvo);
+                return;
+            }
+
+            if (c.startsWith('cd ')) {
+                const alvo = c.slice(3).trim();
+                const nomeAlvo = alvo.replace('historias/', '');
+                if (segredoNome && nomeAlvo === segredoNome) { lerSecreto(); return; }
+                if (nomeAlvo === 'segredo' || nomeAlvo === 'secreto') {
+                    printToTerminal("\n🔒 [ACESSO NEGADO] Esse arquivo precisa de um codinome. Tente: entrar <codinome>\n", 'text-red-400');
+                    createInputLine();
+                    return;
+                }
+                const n = descobrirParte(alvo);
+                if (n && n >= 1 && n <= 12) { lerParte(n); return; }
+                printToTerminal(`❌ Caminho não encontrado: '${alvo}'`);
+                createInputLine();
+                return;
+            }
+
+            if (['ajuda', 'help', '?'].includes(c)) {
+                printToTerminal(
+`🎀 Comandos do Terminal:
+  🔹 ls historias            : lista os capítulos
+  🔹 cd historias/parte3     : lê a parte 3 (ou use o mês: cd historias/marco)
+  🔹 proximo / anterior      : navega entre as partes
+  🔹 entrar <codinome>       : abre arquivos secretos
+  🔹 voltar                  : limpa a tela e volta ao início
+  🔹 estacao <nome>          : petalas, dente, outono, inverno, estrelas, vagalumes, limpo
+  🔹 tema <nome>             : rosa, carmesim, amber, esmeralda
+  ⏩ Enter, Esc ou toque na tela pula a digitação.`);
+                createInputLine();
+                return;
+            }
+
+            const mEst = c.match(/^estacao (.+)$/);
+            if (mEst) {
+                const opt = mEst[1];
+                if (['petalas', 'dente', 'outono', 'inverno', 'estrelas', 'vagalumes', 'none', 'limpo'].includes(opt)) setSeason(opt === 'limpo' ? 'none' : opt);
+                else printToTerminal('⚠️ Opções: petalas, dente, outono, inverno, estrelas, vagalumes, limpo');
+                createInputLine();
+                return;
+            }
+
+            const mTema = c.match(/^tema (.+)$/);
+            if (mTema) {
+                if (['rosa', 'carmesim', 'amber', 'esmeralda'].includes(mTema[1])) setTheme(mTema[1]);
+                else printToTerminal('⚠️ Temas: rosa, carmesim, amber, esmeralda');
+                createInputLine();
+                return;
+            }
+
+            if (cmd !== '') printToTerminal(`❌ Comando não reconhecido: '${cmd}'. Digite 'ajuda' para ver os comandos.`);
+            createInputLine();
+        }
+
+        // Pular digitação com Enter / Esc / clique
+        document.addEventListener('keydown', (e) => { if (isTyping && (e.key === 'Enter' || e.key === 'Escape')) skipRequested = true; });
+        crtScreen.addEventListener('click', () => { if (isTyping) skipRequested = true; });
+
+        function typewriterPrint(fullText, onComplete) {
+            isTyping = true;
+            skipRequested = false;
+            const line = printToTerminal('', 'italic text-pink-200 leading-relaxed my-2');
+            let idx = 0;
+
+            function finish() {
+                line.textContent = fullText;
+                isTyping = false;
+                scrollToBottom();
+                printToTerminal('\n[ ~ Fim da Leitura ~ ]\n', 'text-rose-400 font-bold');
+                if (onComplete) onComplete();
+            }
+
+            function typeStep() {
+                if (skipRequested) return finish();
+                if (idx < fullText.length) {
+                    const passo = 3;
+                    line.textContent += fullText.slice(idx, idx + passo);
+                    idx += passo;
+                    scrollToBottom();
+                    if (idx % 9 === 0) playKeyClickSound();
+                    setTimeout(typeStep, 16);
+                } else finish();
+            }
+            typeStep();
+        }
+
+        function setTheme(themeName) {
+            crtScreen.classList.remove('theme-rosa', 'theme-carmesim', 'theme-amber', 'theme-esmeralda');
+            crtScreen.classList.add(`theme-${themeName}`);
+            printToTerminal(`\n[ 🎨 Tema alterado para: ${themeName.toUpperCase()} ]`);
+        }
+
+        let isPowerOn = true;
+        function togglePower() {
+            const led = document.getElementById('power-led');
+            const status = document.getElementById('screen-status');
+
+            isPowerOn = !isPowerOn;
+
+            if (isPowerOn) {
+                crtScreen.style.display = 'flex';
+                led.className = 'w-3 h-3 rounded-full led-on transition-all';
+                status.textContent = 'CRT Online • 60Hz';
+                printToTerminal('\n[ Monitor LIGADO ]');
+            } else {
+                crtScreen.style.display = 'none';
+                led.className = 'w-3 h-3 rounded-full bg-red-950 transition-all opacity-40';
+                status.textContent = 'CRT Desligado (Standby)';
+            }
+        }
+
+        window.addEventListener('load', () => {
+            const box = document.getElementById('quick-parts');
+            Object.keys(HISTORIAS.partes).sort((x, y) => x - y).forEach(n => {
+                const b = document.createElement('button');
+                b.className = 'px-3 py-1 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-xl shadow-xs transition-transform active:scale-95';
+                b.textContent = `📖 Parte ${n}`;
+                b.onclick = () => runQuick(`cd historias/parte${n}`);
+                box.appendChild(b);
+            });
+            initWelcomeScreen();
+        });
+    </script>
+</body>
+</html>
