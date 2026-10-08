@@ -54,13 +54,13 @@ Com comandos, sons, estações (pétalas, estrelinhas, vaga-lumes…) e temas:
 | `estacao <nome>` | petalas, dente, outono, inverno, estrelas, vagalumes, limpo |
 | `tema <nome>` | rosa, carmesim, amber, esmeralda |
 
-## 🚀 Publicando (GitHub Pages)
+##  Publicando (GitHub Pages)
 
 1. Suba tudo desta pasta para o repositório (`index.html`, `historias.js`, `banner.svg`, `partes/`, `README.md`).
 2. **Settings → Pages → Branch `main` / root → Save**.
 3. Troque `SEU-USUARIO` e `NOME-DO-REPO` neste README pelo seu usuário e pelo nome do repositório.
 
-## ✍ Nova parte
+##  Nova parte
 
 1. Adicione `"6": "texto..."` em `partes` no `historias.js` (parágrafos separados por `\n\n`).
 2. Crie `partes/parte-6.md` copiando o formato da parte 5 e troque `em breve` pelo link na tabela.
