@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://EllySantiago.github.io/Try-find-my-honeypot-Leo/">
+<a href="https://SEU-USUARIO.github.io/NOME-DO-REPO/">
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
@@ -37,7 +37,7 @@ rosita@coquette-term:~$ ls historias
 rosita@coquette-term:~$ entrar ▌
 ```
 
-*…existe um arquivo escondido. Quem souber o codinome, abre no terminal.* 
+*…existem arquivos escondidos. Quem souber o codinome, abre no terminal.* 
 
 ## 🖥 Terminal interativo
 
@@ -49,18 +49,13 @@ Com comandos, sons, estações (pétalas, estrelinhas, vaga-lumes…) e temas:
 | `ls historias` | lista as partes |
 | `cd historias/parte3` ou `cd historias/marco` | lê a parte |
 | `proximo` / `anterior` | navega |
-| `entrar <codinome>` | abre o arquivo secreto |
+| `entrar <codinome>` | abre os arquivos secretos |
 | `voltar` | zera o terminal |
 | `estacao <nome>` | petalas, dente, outono, inverno, estrelas, vagalumes, limpo |
 | `tema <nome>` | rosa, carmesim, amber, esmeralda |
 
-##  Publicando (GitHub Pages)
 
-1. Suba tudo desta pasta para o repositório (`index.html`, `historias.js`, `banner.svg`, `partes/`, `README.md`).
-2. **Settings → Pages → Branch `main` / root → Save**.
-3. Troque `SEU-USUARIO` e `NOME-DO-REPO` neste README pelo seu usuário e pelo nome do repositório.
-
-##  Nova parte
+## ✍ Nova parte
 
 1. Adicione `"6": "texto..."` em `partes` no `historias.js` (parágrafos separados por `\n\n`).
 2. Crie `partes/parte-6.md` copiando o formato da parte 5 e troque `em breve` pelo link na tabela.

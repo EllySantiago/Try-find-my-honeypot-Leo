@@ -835,7 +835,7 @@
                 const pronta = HISTORIAS.partes[String(n)];
                 linhas.push(`  parte ${n} ${MESES_BONITOS[n - 1]}${pronta ? '  ✿' : ''}`);
             }
-            if (diabreteUnlocked) linhas.push(`  [🔒 SECRETO] ${segredoNome}`);
+            Object.keys(segredos).forEach(n => linhas.push(`  [🔒 SECRETO] ${n}`));
             printToTerminal(linhas.join('\n'));
             printToTerminal("\n💡 Para ler: cd historias/parte1  (ou cd historias/janeiro)\n   ✿ = já escrita. As outras chegam com o tempo.", 'text-rose-400 text-sm');
         }
@@ -856,26 +856,34 @@
             });
         }
 
-        let segredoNome = null, segredoTexto = null;
+        const segredos = {};
+
+        function acharSegredo(alvo) {
+            const k = alvo.replace(/\s+/g, '');
+            return Object.keys(segredos).find(n => n.replace(/\s+/g, '') === k) || null;
+        }
 
         async function decifrarSegredo(codinome) {
             const bin = (b64) => Uint8Array.from(atob(b64), ch => ch.charCodeAt(0));
-            const sec = HISTORIAS.secreto;
             const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(codinome), 'PBKDF2', false, ['deriveKey']);
-            const chave = await crypto.subtle.deriveKey(
-                { name: 'PBKDF2', salt: bin(sec.salt), iterations: 150000, hash: 'SHA-256' },
-                base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
-            const claro = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bin(sec.iv) }, chave, bin(sec.data));
-            return new TextDecoder().decode(claro);
+            for (const sec of HISTORIAS.secretos) {
+                try {
+                    const chave = await crypto.subtle.deriveKey(
+                        { name: 'PBKDF2', salt: bin(sec.salt), iterations: 150000, hash: 'SHA-256' },
+                        base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+                    const claro = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bin(sec.iv) }, chave, bin(sec.data));
+                    return new TextDecoder().decode(claro);
+                } catch (e) { /* codinome não é deste segredo, tenta o próximo */ }
+            }
+            throw new Error('codinome-errado');
         }
 
         async function destravar(nome) {
             isTyping = true;
             try {
                 if (!window.crypto || !crypto.subtle) throw new Error('sem-crypto');
-                segredoTexto = await decifrarSegredo(nome);
-                segredoNome = nome;
-                diabreteUnlocked = true;
+                nome = norm(nome);
+                segredos[nome] = await decifrarSegredo(nome);
                 promptUsername = nome.replace(/\s+/g, '');
                 playSecretUnlockSound();
                 printToTerminal(`\n😈 [CODINOME ACEITO: ${nome.toUpperCase()}]`, 'font-bold text-red-400 text-xl');
@@ -889,9 +897,9 @@
             createInputLine();
         }
 
-        function lerSecreto() {
+        function lerSecreto(nome) {
             printToTerminal('\n😈 Abrindo o arquivo secreto...\n', 'font-bold text-red-400');
-            typewriterPrint(segredoTexto, () => createInputLine());
+            typewriterPrint(segredos[nome], () => createInputLine());
         }
 
         function handleCommand(rawCmd) {
@@ -922,7 +930,8 @@
             if (c.startsWith('cd ')) {
                 const alvo = c.slice(3).trim();
                 const nomeAlvo = alvo.replace('historias/', '');
-                if (segredoNome && nomeAlvo === segredoNome) { lerSecreto(); return; }
+                const achado = acharSegredo(nomeAlvo);
+                if (achado) { lerSecreto(achado); return; }
                 if (nomeAlvo === 'segredo' || nomeAlvo === 'secreto') {
                     printToTerminal("\n🔒 [ACESSO NEGADO] Esse arquivo precisa de um codinome. Tente: entrar <codinome>\n", 'text-red-400');
                     createInputLine();
