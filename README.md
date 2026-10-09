@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://EllySantiago.github.io/NTry-find-my-honeypot-Leo/">
+<a href="https://EllySantiago.github.io/Try-find-my-honeypot-Leo/">
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
