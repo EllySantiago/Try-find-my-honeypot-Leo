@@ -9,6 +9,16 @@
 </div>
 
 ---
+e continua nesse habito. não é normal nem saudavel ficar vigiando assim nao, vai viver tua vida, daqui a pouco vai me dizer que quer ir pro banheiro junto comigo, tacaporra.
+inclusive, quando eu disse que ia lhe pegar não foi no sentido bom que voce pensa, pode chamar lua, charles, thays se brincar chame ate o papa e o presidente, mas eu vou lhe dar um beliscao e em quem se meter tbm, o que eu não tenho de altura eu tenho de coragem pra fazer macho descer do salto, piranha.
+eu to triste cara, me deixe( tu ja não tem coragem de se aproximar quando to bem e como todos os outros tambem não vai ter quando to mal.), eu queria mo feliz contar o que eu tava aprendendo no whats pra tu, achei que finalmente iamos parar de falar aqui e iamos começar a conversar de verdade com tu acalmando tua ansiedade aos poucos pra me responder. 
+eu não tenho paciencia cara, eu ainda tava tentando pra não te deixar ansioso .
+foi por ciumes de anjinho eu to ligada mas veja, ta achando que é so tu que pode ta dando confiança é ? eu disse pq é melhor eu falando na cara do que tu ouvindo dos teus vigias e criando mil teorias nada a ver( vigias esses que deixo avisado vou descer no pau tbm,  detesto isso, não gosto de ninguem me controlando, nem vigiando, nem me maltratando por achar que sou posse ou objeto, ta achando que isso aqui é dark romance ? e mesmo que fosse, tenho cara de alvo por um acaso piranha? ). 
+ele ta sofrendo pela ex,anjinho, ta ha uma semana postando coisas do tipo " queria que minha ex fosse atual". ele parou de ser invasivo, foi literalmente um abraço, deixe de ser ciumento e ver coisa a mais do que os fatos, eu sei que ele ta na maldade mas a escolha ta na minha mão não na dele. 
+não achei que eu dizer fosse te incomodar tanto mas achei melhor eu mesma falar que os fofoqueiros.
+não sou sua posse, e se o fosse, deveria proteger melhor suas posses. 
+eu ja desisti de esperar um pedido de namoro teu, to achando ser impossivel.
+so me deixe quieta, eu estou sensivel, quero um pouco de paz( sendo bem honesta queria que tu falasse comigo, mas te conhecendo acho dificil).
 
 > “hoje vou lhes contar uma história, de uma pequena menina antes de encontrar uma estrelinha caída. quer ouvir uma história?”
 
@@ -69,6 +79,5 @@ Com comandos, sons, estações (pétalas, estrelinhas, vaga-lumes…) e temas:
   <img src="https://api.visitorbadge.io/api/visitors?path=EllySantiago%2FTry-find-my-honeypot-Leo&label=Visitas&labelColor=%23151b23&countColor=%23151b23&style=flat-square" height="16" alt="Visitas"/>
 </p>
  
-
 
 
