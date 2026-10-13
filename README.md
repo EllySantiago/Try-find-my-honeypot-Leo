@@ -37,7 +37,7 @@ rosita@coquette-term:~$ ls historias
 rosita@coquette-term:~$ entrar ▌
 ```
 
-*…existem arquivos escondidos. Quem souber o codinome, abre no terminal.* 😈
+*…existem arquivos escondidos. Quem souber o codinome, abre no terminal.* 
 
 ## 🖥 Terminal interativo
 
