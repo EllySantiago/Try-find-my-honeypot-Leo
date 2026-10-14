@@ -4,6 +4,7 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
+### to pensando em ir pra cesar hj, tu vai tbm? se pa, ir bater ponto no porto
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
