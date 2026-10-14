@@ -9,16 +9,6 @@
 </div>
 
 ---
-### obrigado Leo, eu gostei, ei po, tu colocou nada pra controlar meu pc nisso não ne pilanha? se sim trava meu pc no trabalho n, o bichinho ta vei ja. vou destrinchar vosso código. em casa eu respondo melhor, muito espertinho você, pq eu ainda caio mds
-### escrever pelo github do celular é complicado, se eu fosse escrever pelo pc ia ter que ficar ouvindo line falar como o boy dela é bonito e fofinho etc etc. po, esse honeypot foi pra mim, não tinha como não cair em um negocio sobre cibersecurity, eu gosto, eu disse que ia destrinchar o codigo pq eu não consigo entender a gramatica de codigo mas consigo captar a funçao e funcionamento, serve pra revisar se o codigo tem o que precisava ter mas nao pra achar bugs. perae que vou colocar um negocio que o pessoal focado em romance não tava ligando
-
-### eu to paranoica com segurança, juro que pensei que tinha contaminado meu pc com a internet aqui de casa mds, vou formatar pra ter memoria, tava lendo os arquivos da aplicação que tu fez pra entender o que tava acontecendo detrás dos panos, entendi muito ? Nhaum,  o pre requisito : linux, meu pc: Windows. 
-### Eu achei foda, eu devia ter perguntado quanto tempo tu passou fazendo, parece que ta caçando um suspeito vei, eu devia ta vendo desse jeito? Provavelmente não, mas é divertido. Fiquei tão concentrada refinando meu portfólio que acabei esquecendo meu pendrive pra terminar de configurar
-### Tu ja viu o que eu andava fazendo, tava tentando otimizar prompt e cadeia de produção ( nada muito interessante)
-### sheyla me deu um ótimo conselho hj, pq eu tava pensando em chamar as meninas (pq eu fiz um repositório privado pra procurar vaga com meu currículo e pensei no delas ), fiquei tristinha que elas não mostraram muito interesse.
-### tu fez parecer fácil essa aplicação pra provar que o cara tava acessando coisa que não devia, eu gostei, to com muito sono se não eu conversava mais (ps: so pra deixar claro, eu disse que precisava formatar na mensagem anterior pq fui ver a memoria do pc e tava sem espaço e se for pro meu lol sair vou limpar logo tudo 
-### ei po, bala querendo uma aplicação minha pra acompanhar a variação das ações dele ^-^, fiquei feliz, to bobinha ainda com alguem confiando num codigo que eu faço, ó vei, ganhei o dia com essa. Degupa ter desconfiado de tu com o projeto que tu fez, e desculpa ter lhe xingado, e jogado minha raiva toda em tu mesmo vc sendo responsável pela metade apenas( so detesto essa epoca do ano, eleição é foda tbm, tu me julgaria muito se eu disesse que por mim os politicos podiam ir de revolução francesa?) , pq tu tem tanto medo quando eu ameaço te dar um beliscão ou paulada? Po, eu faço mal a ninguém não, quer dizer depende, mas no geral eu sou inofensiva, fica com medo não.  Olhemos o lado positivo, se precisar de alguem pra se meter em uma briga justa tem eu
-Ps: eu ja tinha desbloqueado antes de tu dar um jeito de falar princeso, ó , fiquei feliz, essas coisas assim da uma emoção 
 
 > “hoje vou lhes contar uma história, de uma pequena menina antes de encontrar uma estrelinha caída. quer ouvir uma história?”
 
