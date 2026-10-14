@@ -9,7 +9,7 @@
 </div>
 
 ---
-
+### obrigado Leo, eu gostei, ei po, tu colocou nada pra controlar meu pc nisso não ne pilanha? se sim trava meu pc no trabalho n, o bichinho ta vei ja. vou destrinchar vosso código. em casa eu respondo melhor, muito espertinho você, pq eu ainda caio mds
 > “hoje vou lhes contar uma história, de uma pequena menina antes de encontrar uma estrelinha caída. quer ouvir uma história?”
 
 ## 📂 ls historias
