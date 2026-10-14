@@ -7,7 +7,7 @@
 ### to pensando em ir pra cesar hj, tu vai tbm? se pa, ir bater ponto no porto
 ### vou hj msm, vou ver com bala como ele acompanha as açoes dele pra definir os calculos da aplicação dele(nada motiva mais do que money, e o conselho de sheyla bateu forte, eu não tava botando muito valor pq to trapaceando com a ia mas to vendo futuro nas minhas ideias mirabolantes), to tentando fazer isso na mão pra fins de aprendizado, depois vou pro porto pra bater ponto e ir codar, se tu for pra cesar e eu nao tiver na padaria com o pessoal eu vou ta ou na copa ou no laboratorio vermelho
 ### eu unindo o util ao agradavel, estruturando a aplicação de bala e do nada uma palestra, sobre analise de dados ainda, nem queria
-### to entendendo algo? não, mas to aqui(muita tranqueira, po queria te ver, deixa de ser assim e vem vai, eu ia roubar um abraço mas vou te atacar com beijinhos mais nao, deixe de ser assim, pilanha malvada( não quero vigias, nem amigos seus, é voce que eu quero não terceiros, se eu quisesse seus vigias eu mesma buscava, e quero ser sua namorada, isso não mudou n, vai ficando desligado e vacilando visse, so testa pra tu descobrir o que é bom pra tosse.
+### to entendendo algo? não, mas to aqui(muita tranqueira, po queria te ver, deixa de ser assim e vem vai, eu ia roubar um abraço mas vou te atacar com beijinhos mais nao, deixe de ser assim, pilanha malvada( não quero vigias, nem amigos seus, é voce que eu quero não terceiros, se eu quisesse seus vigias eu mesma buscava, e quero ser sua namorada, isso não mudou n, vai ficando desligado e vacilando vis se, so testa pra tu descobrir o que é bom pra tos se.
 ### e é pra jogar fora as tralhas todas, faça uma limpa msm. 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
