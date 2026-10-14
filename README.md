@@ -5,6 +5,7 @@
 </a>
 
 ### to pensando em ir pra cesar hj, tu vai tbm? se pa, ir bater ponto no porto
+### vou hj msm, vou ver com bala como ele acompanha as açoes dele pra definir os calculos da aplicação dele(nada motiva mais do que money, e o conselho de sheyla bateu forte, eu não tava botando muito valor pq to trapaceando com a ia mas to vendo futuro nas minhas ideias mirabolantes), to tentando fazer isso na mão pra fins de aprendizado, depois vou pro porto pra bater ponto e ir codar, se tu for pra cesar e eu nao tiver na padaria com o pessoal eu vou ta ou na copa ou no laboratorio vermelho
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
