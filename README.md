@@ -10,6 +10,7 @@
 
 ---
 ### obrigado Leo, eu gostei, ei po, tu colocou nada pra controlar meu pc nisso não ne pilanha? se sim trava meu pc no trabalho n, o bichinho ta vei ja. vou destrinchar vosso código. em casa eu respondo melhor, muito espertinho você, pq eu ainda caio mds
+### escrever pelo github do celular é complicado, se eu fosse escrever pelo pc ia ter que ficar ouvindo line falar como o boy dela é bonito e fofinho etc etc. po, esse honeypot foi pra mim, não tinha como não cair em um negocio sobre cibersecurity, eu gosto, eu disse que ia destrinchar o codigo pq eu não consigo entender a gramatica de codigo mas consigo captar a funçao e funcionamento, serve pra revisar se o codigo tem o que precisava ter mas nao pra achar bugs. perae que vou colocar um negocio que o pessoal focado em romance não tava ligando
 > “hoje vou lhes contar uma história, de uma pequena menina antes de encontrar uma estrelinha caída. quer ouvir uma história?”
 
 ## 📂 ls historias
