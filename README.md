@@ -7,6 +7,7 @@
 
 continuo firme na minha opiniao de regenere.
 mas obligado. 
+### desculpa ter sido bruta pra tu sair, me engasguei com o chocolate enquanto ria. tirei cinco, queria ter fechado, como assim eu não fechei esse diabo? vou entrar no modo obcecada, me recuso a aceitar não fechar. eu aplicando todo um conjunto de revisões de segurança (a senha era literalmente 123 da gente e o perfil gestor não existia de fato, todo mundo era adm) tu não fala muito to me achando tagarela demais, vou parar um pouco, tu se incomoda comigo falando muito?
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
