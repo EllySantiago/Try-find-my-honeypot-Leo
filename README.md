@@ -5,9 +5,8 @@
 </a>
 
 
-continuo firme na minha opiniao de regenere.
-mas obligado. 
-### desculpa ter sido bruta pra tu sair, me engasguei com o chocolate enquanto ria. tirei cinco, queria ter fechado, como assim eu não fechei esse diabo? vou entrar no modo obcecada, me recuso a aceitar não fechar. eu aplicando todo um conjunto de revisões de segurança (a senha era literalmente 123 da gente e o perfil gestor não existia de fato, todo mundo era adm) tu não fala muito to me achando tagarela demais, vou parar um pouco, tu se incomoda comigo falando muito?
+### te amo vei, graças a tu e ficar te usando de especime eu tive uma ideia genial, tu vai ver, quando eu começar a ganhar dinheiro vou te levar pra sair e tu vai ser minha sobremesa ( tem um projeto open source que mimetiza sua voz, junta isso, o marketing (skill e plugins em personalização) e a criação de post do claude e balao, ideia pra a pagina que tu tinha de pokemon, se bem que vendo tu teria mais futuro nesse de guerra e estratégia que parece lords mobile, esse tem mais tua cara e me parece que te daria mais gosto de fazer algo sobre )
+### Boa noite Leo 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
