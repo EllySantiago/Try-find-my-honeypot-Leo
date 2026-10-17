@@ -4,9 +4,9 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### pq tu continua se guardando tanto de mim icaro? tipo, pq tu eita tanto se aproximar emocionalmente de mim? se aproximar de verdade, tem alguma coisa que eu ainda não to vendo em tu não é? alem dessa frieza calculada sua.
-### eu quero que sejamos um casal, que sejamos namorados, ja faz tempo que quero namorar contigo e ja aceitei mas tu se isola, sabe que gosto de voce, eu sei que é dificil, mas eu queria realmente voce, eu quero um relacionamento serio contigo, poder chegar e dizer que tu é meu namorado(eu ja digo que tu é meu crush, eu te admiro e gosto de tu), as vezes passar horas conversando, falando da vida, trocar boa noite ou quem sabe jogar alguma coisa juntos
-
+### eu percebi que tu se incomoda que eu digo que vou sair com meus amigos, eu não digo isso por mal, é só pra avisar pra onde eu vou, desculpa, eu só tava dizendo pq achei que tu iria se sentir mais seguro de eu dizer  que é meus amigos e não cara aleatório ou pra tu não pensar que é encontro com alguém ou coisa do tipo, tem alguma forma que tu se sentiria confortável de eu falar das minhas pessoas? 
+### meus amigos da escola são importantes, eu não gosto de sentir que tô escondendo alguma coisa, eu só não falo quando vou bater perna sozinha, pq ai eu fico pensando que vai preocupar, quando eu voltar é história na certa pra contar .
+### boa noite leo, dorme bem
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
