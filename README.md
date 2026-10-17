@@ -4,10 +4,10 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### eu percebi que tu se incomoda que eu digo que vou sair com meus amigos, eu não digo isso por mal, é só pra avisar pra onde eu vou, desculpa, eu só tava dizendo pq achei que tu iria se sentir mais seguro de eu dizer  que é meus amigos e não cara aleatório ou pra tu não pensar que é encontro com alguém ou coisa do tipo, tem alguma forma que tu se sentiria confortável de eu falar das minhas pessoas? 
-### meus amigos da escola são importantes, eu não gosto de sentir que tô escondendo alguma coisa, eu só não falo quando vou bater perna sozinha, pq ai eu fico pensando que vai preocupar, quando eu voltar é história na certa pra contar .
-### na minha cabeça eu usar o tarot da uma vantagem desleal, ta no jogo é pra usar eu sei mas ainda assim, pq querendo ou não eu sei que tu é inseguro mas não sei bem como te deixar mais tranquilo, na minha visao eu mesma contando as coisas deixa equilibrado 
-### boa noite leo, dorme bem
+### bom dia icaro, vou passar a te chamar pelo teu nome
+
+### preguiça de sair mas tem que dar prova de vida 
+
 
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
