@@ -31,6 +31,8 @@
 
 ### eu nao pergunto julgando, eu não romantizo sofrimento alheio, aceitar o sofrimento é o primeiro passo pra curar, ninguem pode curar uma ferida que não ve ter, alguns gatilhos são sutis. lua tem gatilho com o nome, mas não so isso, especificamente com meninas deduzo que por meninas terem feito bully com o nome dela, é sutil mas eu notei, ela provavelmente não percebe, mas aquelas meninas do ensino medio dela marcaram epoca de uma forma pesada, procure detalhes assim, em si, momentos de gatilhos, situaçoes parecidas, idades diferentes, as memorias sao suas e eu to me sentindo criminosa pra ir muito alem, juro que não vejo tua vida por mal, eu sou curiosa, me meto em confusao por isso.
 
+### eureka, nada que barriga cheia e uma reflexao no vaso não faça, vlad, foi o caso dos teus ciumes,combinado com apossessividade mas teve mais algum elemento ai, sabe que é errado deixar amiguinhos assim so pq não quer que a menina que _considera_ sua deu atenção a essa pessoa nem isso diminui o gostar dela por voce e nao pq é um comportamento normal e sim pq ela gosta de voce, certo? e pq tenho a impressao que tu tava tentando me dizer algo? vou ver no baralho ainda, e tive uma ideia brilhante, pq não usa a cirigaita de referencia? ela acha que é tua dona, use essa situação pra tirar metricas, vou ficar perto de vcs, voce observa e analisa, da pra tirar informação de tudo, e antes que pense que vou fazer algum coisa eu não preciso, minha presença sera suficiente, penso eu pelo menos, ela parece gostar de usar teu metodo de pagaras de doido e ganharas o mundo. famoso se fazer de sonso. 
+
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
