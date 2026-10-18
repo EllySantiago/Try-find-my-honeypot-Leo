@@ -12,6 +12,15 @@
 ## Bom dia piranha!!! a vida ta dificil? pense por esse lado, voce é tão gostoso que a vida fica dura pra você bjs 
 
 
+### perdao leo, mas vou ter que testar umas coisas em tu. eu percebi que tem um gatilho teu que ainda não tinha indentificado, teus gatilhos são um emaranhado que um leva ao outro, po, que diabo, pior de tudo é meus guias sem me deixar encostar em tu, aprenda autocontrole, acredite, voce não tem ainda, quando tiver minhas provocações vao parar de fazer mal. 
+### eu to faz um tempo tentando indentificar teus gatilhos de dependencia emocional mas so consigo perceber os de controle e possessividade, que normalmente é tu perceber que não é a pessoa mais importante pra quem tu gosta ou a maior parte da atenção dessa pessoa não é exclusiva sua( eu sei que lhe incomoda eu ta falando isso, me incomoda tbm ta curiando os outros assim mas veja bem, eu quero voce, mas nem posso nem meus guias vão me deixar encostar em voce pra virar um relacionamento toxico e eu sou intensa, não sei me dedicar pouco a meu namorado( nem pouco pra varios viu, eu tenho poucos amigos mas me dedico a eles, quando posso, e quando sou arrastada a dar prova de vida)
+### po, tenta lembrar ai , tua dependencia emocional veio de algum relacionamento, isso eu lembro ja ter visto nas cartas, a possessividade e controle veio da infancia, mas tem caracteristicas que ainda não to ligando nos pontos ( e antes que pense " ah eu vivi bem ate agora assim" não viveu n, viveu sofrendo por gaia e atraindo mina imprestavel mesmo sabendo que tem todas as caracteristicas pra ser um bom partido. não queria, mas acho que vou de freud explica, tem alguma coisa em tu que tu não ta falando que te incomoda e não to sabendo ver, isso sem contar que não queria espiar, mas teu desejo por mim ativa os gatilhos posse e controle, tu se controla mas a vontade continua la, achar uma forma saudavel de expressar isso.)
+### é foda que eu sou toxica mas tu ta acostumado a um nivel ruim o suficiente pra não conseguir notar (-_-") 
+### eu vou contar pelo lado espiritual e acredite se quiser. quando eu gosto de alguem eu me conecto a essa pessoa, se essa pessoa tem emoções em relação a mim a ponto de fazela perder a razão eu sinto, é uma corrente, pq eu absorvo a sua vontade e muitas vezes reflito, eu preciso absorver algumas coisas pra entender o problema ta quando reflito, isso é mandar de volta , poxa, queria falar desse caso assim aqui n mas vamos la, quando tu me viu dançando, tu teve alguma vontade forte o suficiente pra me bloquear e ativar teus gatilhos e ativar gatilho em mim, o pica pau não ia cantar na minha janela de novo assim se não tivesse coisa ai, o que tem em sua vontade e imaginação sobre mim que te tira do serio e faz os passaros vir me contar? e eu to sendo literal quanto aos passaros. 
+
+### eu pergunto sabendo parte da resposta pq to querendo parar de ter que ficar explorando um monte de coisa e ir a resposta, direto ao ponto, as vezes sinto que se existir legislação de privacidade no mundo espiritual me lasquei, pegar 10 anos de karma kkkkkkkkkk
+
+
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
