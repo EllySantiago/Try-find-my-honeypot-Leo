@@ -4,8 +4,12 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### Filho, o resto da fofoca vai ficar pra amanhã fiquei pesquisando umas imagens e me empolguei, passei meia hora nessa brincadeira, Hortênsia, tulipas, rosas me pega demais, achei umas referências de bruxa tbm e pqp ah, fui pegando imagens de tudo que achei bonitinho, quando vi pa, ja tinha salvo 30 fofinho, vou usar? nem sei, serve pro git hub não mas vou usar em outra coisa, to refinando minhas skills, amanha vc vai entender pra que as tulipas.
-### Boa noite icaro, dorme bem (nao muito, bem mesmo so se fosse comigo)
+### hoje acordei virada no rock, lavei o banheiro e acho que vou dar uma arrumada na minha zona e ver coisa pra jogar fora
+### inclusive, é repentino mas se não fosse não era eu, mas quando tu aprender a lidar com esses teus padrão disfuncional, quer namorar comigo? 
+### eu to nos pique ninguem ganha do cara paciente mds. hoje fiz crepioca, é torcer pro meu pai não desgostar, deixei uma pra ele ó pessoa chata pra comida, fiz uma vitamina e comi com mainha, eu queimando a panela e ela me julgando kkkkkkkkk e sim, a panela não a comida pq crepioca não se unta a panela e eu sou impaciente pra fazer no fogo baixo ai queima, tomei um banho premium tbm, feia talvez, mal cuidada jamais, acho que vou lavar minha bolsa, ta bom ja, hoje vai ser dia de faxina, colocar um rock e shakira e invocar meu espirito de faxina pra revirar tudo, to aprendendo a dançar beautiful lier e puts no processo enquanto fazia exercício acho que machuquei o pe, amanha deve ta bom ja, enfim, daqui a pouco eu subo a cartinha, eu sei que tu é curioso mas quero fazer uma bonitinha
+### inclusive enquanto eu lavava o banheiro e cantava a pleno vocal quase acordando meu pai começou a tocar rock you like a hurricane, que me fez lembrar que queria ver mortal kombat contigo que me fez lembrar de outro negocio, naquela epoca que tu comprou açai, era pra mim e tu não sabia como me dar não era? tive essa ligeira impressão mas eu fiquei " eu to tentando ver coisa onde não existe"
+# to feliz, manheci inspirada e achei umas referencias de arte bonita slk vou  ate trocar a imagem de perfil, ta bom de trocar ja.
+## Bom dia piranha!!! a vida ta dificil? pense por esse lado, voce é tão gostoso que a vida fica dura pra você bjs 
 
 
 
