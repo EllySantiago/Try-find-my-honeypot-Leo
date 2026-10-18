@@ -4,14 +4,8 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### bom dia icaro, vou passar a te chamar pelo teu nome
-
-### preguiça de sair mas tem que dar prova de vida 
-### cheguei quase agora, passei um pratao de verdura delicioso pra dentro e vou escrever o babado de hj numa cartinha pq foi muita coisa, foi meu amigo aparecendo casado com a mina que ele não queria, meu outro amigo que foi pro acampamento da igreja, eu contando dos carinha que ja deu em cima de mim ( falei daquele autista la, meu amigo ah po, é normal, ai eu perguntei pra por o braço no ombro e ele estilou, meu amigos vegas que é o da igreja, dizendo "é pq drielly é de boa mas se fosse outra menina isso dai tinha dado problema pra ele na certa", e meus amigos disesseram que sou violenta, achei um absurdo, eu disse que achava ter assustado o que eu gostava pq disse que ia beliscar ele e que podia vir o papa que não ia adiantar mas a pessoa levou a serio( eles praticamente fizeram um minuto de silencio por ti, e me perguntaram o que eu fiz pra assustar nesse nivel, ate eu me questiono mas ok) teve eu falando de cibersegurança pro meu amigo! ele dizendo que vai fazer programa agora, tavam perguntando das minhas rainhas pra eu apresentar tbm e não podiam ter levado não mais categorico ate meu melhor amigo dizer" mermao é amiga dela, tu acha que vai ser alguma menina que presta e ela vai apresentar pra gente? olha a referencia dela" tipo, é uma roda de nerds imprestaveis, somos nos mas enfim vou parar se não eu conto tudo (fiquei curiosa e fui ver se ia demorar muito pra tu conseguir superar a dependencia emocional e ia ser uns dois meses. 
-### uma coisa que percebi, teu ciumes ativa tua possessividade, isso me afasta e ativa a dependencia que te deixa triste, mas como agora tu ta quase controlando a possessividade os gatilhos ta desarmando aos poucos
-### melhores partidas de uno da minha vida, teve combate de titãs no uno hj eu vs meu sensei (jogavamos apenas pra fazer o outro perder, ganhar ou perder nao importava contanto que o outro perdesse
-### ei icaro, o que tu gosta em mim? tipo serio mesmo, o que tu admira em mim? o que tu respeita? algo que tu gosta ? 
-(mentaliza a resposta e vou perguntar ao baralho qual resposta tu daria ou mentalizou, tu não fala ent vou descobrindo, queria conversar contigo que nem pessoa normal, a gente trocando mensagem mas ok)
+### Filho, o resto da fofoca vai ficar pra amanhã fiquei pesquisando umas imagens e me empolguei, passei meia hora nessa brincadeira, Hortênsia, tulipas, rosas me pega demais, achei umas referências de bruxa tbm e pqp ah, fui pegando imagens de tudo que achei bonitinho, quando vi pa, ja tinha salvo 30 fofinho, vou usar? nem sei, serve pro git hub não mas vou usar em outra coisa, to refinando minhas skills, amanha vc vai entender pra que as tulipas.
+### Boa noite icaro, dorme bem (nao muito, bem mesmo so se fosse comigo)
 
 
 
