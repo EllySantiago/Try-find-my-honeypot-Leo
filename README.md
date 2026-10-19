@@ -12,6 +12,10 @@
 ### vontade de faltar, fiquei com 6,97 em testes automatizados, 100% da pontuação individual e pequei na em equipe. e 5 em mobile pq esqueci as atividades (essa unidade eu quero ver, ja vou me preparar pra final, o resto eu passo no fino, tirei so 8 em segurança, ai fiquei triste vei, nessa eu quase choro
 ### Feliz dia do profissional de T.I meu amor ! 
 ### hj vou lhe capturar pequeno pokemon hehe 
+### ei leo, eu percebo tu se esforçando pra tentar aprender as coisas que falo, eu sei como é dificil controlar habitos antigos  e parar com eles, não desiste não, ta indo bem princeso, gosto de tu, beijinhos pra tu
+### relaxe o coração, se prepare final de semana que vou lhe usar( brincadeira ta, leva a serio  tudo que digo n, meu amor não combina comigo, meu leo tbm não soa legal, meu bom eu ja uso pra amigos e meu divo tbm, meu  querido é pra deboche, po, vou pensar um jeito de te chamar
+### descobri que ganhei skill nova, to feliz, não sabia que eu podia entrar no modo obcecada e sair mas eu consigo vei, antes eu tava entrando e saindo a força, agora eu consigo sair no autocontrole, yuuuuuupe, puts, felicidade, direcionar meu hiperfoco com timer pra estudar, balão
+### charles foi pegar um cafe e aparentemente aproveitou pra voltar a ancestralidade e plantar o cafe, torrar, moer pra poder tomar, pq sumiu e sheyla me perguntou e meti essa, ele iria rir se ouvisse kkkkkkkkkkk
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
