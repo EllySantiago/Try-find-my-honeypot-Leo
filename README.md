@@ -4,8 +4,6 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### era umbrinco com uns pingentes entre eles umaestrelina azul que me fez lembrar de voce, a cor não combina com a tua pele ja que é dourado mas achei que tu ia gostar, eu ia dar 5 de novembro por ser uma data especial,  por isso perguntei se tu ja tinha visto  V de vingança. fofoque o que quiser, pra mim ja chega.
-### deixe de me stalkear e fingir que sou eu que fiz isso,nem tu nem charles nem ninguem, eu quero paz.
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
