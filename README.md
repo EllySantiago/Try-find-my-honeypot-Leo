@@ -4,7 +4,14 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-
+### essas mentiras, fofocas, so vou falar essa vez, cale a boca e pese suas palavras quando for por meu nome na sua boca, assim como sou responsavel por como minhas pessoas se comportam contigo voce é responsavel pelas suas.
+### leo querido, posso brincar tambem? 
+### tu faz isso pra as pessoas acharem que tu é o bonzão requisitado, pra parecer que sou sua. tas obcecado em mim ne filho? não se preocupe, no meu harem tem espaço pra voce tbm bb
+### penso se devo conquistar um dos seus amiguinhos, o que acha ? acha que tenho chance querido?
+### se ate tu, deu em cima de mim enquanto eu namorava teu amigo, quantos dos teus amigos sera que consigo darling? eu lembrava de ter dito que não gostava de brincadeira, ficou incapaz de pensar meu bom? 
+### va pro psicólogo, to mandando. vou lhe deixar doido enquanto não for. tu é refem de teus desejos e acha que usa a razão, voce não ve metodo nem esforços pra conseguir o que quer nem como quer, uma moral e etica rasa e fragil, com a profundidade de um pires. 
+### é pra conversar tudo com o psicologo, é pra falar tudo direitinho, se endireite, voce trabalha pra ta com a cabeça e saude no lugar, crie vergonha nessa sua cara e va se tratar.
+### icaro leonardo, se chegar outra graça sua nos meus ouvido acredite de terceira eu não direi nada mas haverá sinais. use o psicologo pra saber sobre si e como lidar com suas inseguranças sua piranha sem vergonha.
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
