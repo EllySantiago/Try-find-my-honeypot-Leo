@@ -4,18 +4,8 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### eu devia ta dormindo, mas ta uma vozinha de minha vontade " va la, pesquisa sobre esse caso do .onion, bora codar e ler tarot, pq dormir tao cedo?"
-###  boa noite leo, gostou da historinha no final? eu gosto de explorar o sentimento humano em historias, adiciona uma perspectiva que nenhuma ia consegue reproduzir.
-### essa semana vou te atentar, vacila ficando so com charles pra ver, apesar que tu seria muito "pare com essas brincadeiras gostosas"
-### hj ja começou naquele pique, " drielly tu ta acordada? se tu tiver dormindo tu diz " " que logica torta é essa?" quando eu levanto ja começa assim " tu que é profissional de segurança da informação " to nos pique aura mais ego de ti, ai o problema? meu pai mandou um spam ontem de noite pq tava revoltado com um contato ai eu pergunto o que ele mandou ele me descreve o que mandou e eu pensando " ai voce não se ajuda, ó a figurinha do homem rapaz", ele descrevendo que era pega toto e uma chibata correndo, irmão eu ri, mainha tbm mas eu tava julgando tbm ai foi me comprar uma coca cola e deixou pizza pra mim pra eu resolver o problema, ai viu na ia que ensinei ele a usar como resolver la e vai fazer isso (graças não precisei pesquisar nada eu "acordei" meia noite com ele me perguntando como resolvia isso, fingi sono, normal, depois desisti ate de codar, eu pensando se eu tivesse dormido msm não ia vir uma bronca dessas) o lado bom é que vou ganhar coca cola, tava com vontade de beber coisa doce msm.
-### sonhei jogando uno contigo, eu quase ganhando e tu mandando um +4 pra mim e eu fazia uma cara tristinha e jogava o meu +4 e dizia uno, ai sim, bolando e passando pro próximo kkkkkkkkkkkk foi divertido, ate em sonho eu tava passando mal tbm, acho que comi demais ontem fui dormir me sentindo um balao.
-### vontade de faltar, fiquei com 6,97 em testes automatizados, 100% da pontuação individual e pequei na em equipe. e 5 em mobile pq esqueci as atividades (essa unidade eu quero ver, ja vou me preparar pra final, o resto eu passo no fino, tirei so 8 em segurança, ai fiquei triste vei, nessa eu quase choro
-### Feliz dia do profissional de T.I meu amor ! 
-### hj vou lhe capturar pequeno pokemon hehe 
-### ei leo, eu percebo tu se esforçando pra tentar aprender as coisas que falo, eu sei como é dificil controlar habitos antigos  e parar com eles, não desiste não, ta indo bem princeso, gosto de tu, beijinhos pra tu
-### relaxe o coração, se prepare final de semana que vou lhe usar( brincadeira ta, leva a serio  tudo que digo n, meu amor não combina comigo, meu leo tbm não soa legal, meu bom eu ja uso pra amigos e meu divo tbm, meu  querido é pra deboche, po, vou pensar um jeito de te chamar
-### descobri que ganhei skill nova, to feliz, não sabia que eu podia entrar no modo obcecada e sair mas eu consigo vei, antes eu tava entrando e saindo a força, agora eu consigo sair no autocontrole, yuuuuuupe, puts, felicidade, direcionar meu hiperfoco com timer pra estudar, balão
-### charles foi pegar um cafe e aparentemente aproveitou pra voltar a ancestralidade e plantar o cafe, torrar, moer pra poder tomar, pq sumiu e sheyla me perguntou e meti essa, ele iria rir se ouvisse kkkkkkkkkkk
+### tu já deve tá em casa ent boa noite dorme bem
+
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
