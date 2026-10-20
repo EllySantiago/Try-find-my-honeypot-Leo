@@ -16,6 +16,9 @@
 ### eu fiquei quando todas as outras teriam te traido e ido embora, voce ficou, mas dessa vez quem traiu foi voce minha confiança, no momento em que contou sobre mim so o que lhe era conveniente mesmo sabendo estar errado, mesmo arrumando um problema pra mim de graça quando eu tinha paz contigo. 
 ### me traiu no momento em que contou tantas mentiras que elas se tornaram a tua propria corda a te enforcar e preferir continuar por medo de enfrentar os proprios atos como um homem e fazer uma escolha.
 ### eu não faço nada pra obter recompensas, mas obter traição assim, mentiras e intrigas me entristece. cuide mais de voce, leve uma vida que voce se orgulhe de contar aonde chegar.
+### se acha injusto o que digo sobre sua falta de carater depois de me arrumar tantos problemas, pq não tenta se por no meu lugar? imaturo e irresponsavel, se fosse responsavel não teria dito tanto ao ponto de criar essa confusão pra si, o mais doentio é que voce gosta dessa toxicidade sebosa, gosta dessas confusão. 
+### alem de te xingar apos teu disrespeito, que mal te fiz? acha realmente certo e justo isso? criar toda uma situação onde eu estou te perseguindo e voce so se rendeu aos meus encantos, serio isso cara? tenho nojo de voce, como pode a pessoa agir assim, com alguem que gosta cara, tu pode tentar esconder ou negar o quanto quiser mas independente de tudo tu gosta de mim, isso é dinamica toxica, ficar criando e alimentando mentira do outro. 
+### o que tu ganhou com tudo isso msm? qual o preço disso icaro? voce que é um homem de precificar as coisas, essa situação e tudo que tu ta brincando e apostando nela, compensou seu preço? 
 ### eu vou descansar a cabeça, faça algo sobre suas proprias mentiras ou me esqueça.
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
