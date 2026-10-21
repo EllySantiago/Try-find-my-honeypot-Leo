@@ -13,6 +13,8 @@
 ### tu ja tava fazendo alguma coisa nao era? foi eu terminar de escrever o texto anterior que veio o pica pau cantar, obrigado icaro
 ### para de medo, bora se ver nas ferias, da um jeito, eu sei que tu não quer falar sobre o que a gente conversa aqui e o sentimento é mutuo, eu sou timida, se for eu e tu discutir o tanto de coisa e vezes que te chamei de bonito e gostoso, conheceras um pimentão.
 
+### obrigado, tu vai querer o presente? é simples mas vou deixar ele escondido e tu vai procurar na cesar um bau do minecraft, dia 5 eu escondo ele(aguentar minha ansiedade ate la ne, nera nem pra eu dizer o que era o presente, ai um segredo sobre mim, não sei fazer surpresa pq ataca a ansiedade e eu falo, so consigo fazer se eu fiz o planejamento todo em um dia distraida e esqueci que o plano ja tava pronto, pq ai so vou lembrar quando eu for fazer um puxado de coisas a fazer, memoria ruim é complicado)
+
 
 ---
 
