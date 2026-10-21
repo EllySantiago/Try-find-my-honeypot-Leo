@@ -8,7 +8,16 @@
 *✿ toque no monitor para abrir o terminal interativo ✿*
 
 </div>
-### Boa noite.
+### de seus pulo e corrija isso, use a imaginação e desfaça essa teia que tu mesmo fez. 
+### icaro, isso não é legal cara, não é brincadeira nem coisa que se faça isso é serio, é por esse tipo de coisa que te mando ir pro psicologo, nem comigo nem com ninguem isso é algo legal. eu fui pedir conselhos a lua pra dar um presente pra pessoa que gosto e escuto " mas sera que a pessoa que voce gosta quer receber o presente?".
+### tu é uma pessoa insegura e cria essas narrativa pra fugir da realidade e se sentir amado pelo amor que voce não recebe . afeto verdadeiro voce corrompe mentindo e usando a mesma tecnica pq no fundo voce não se considera digno e acha que por isso não vai receber afeto. va pro psicologo e discuta sua insegurança profunda. isso é coisa que se pensa nas consequencias, isso é imaturidade sua, tem situação que a gente paga de doido e se faz de sonso quando a pessoa faz algo serio conosco mas nunca é o caso contigo, te conheço, tu faz isso com as minas do trabalho tbm(e praticamente toda menina que cruza teu caminho, tu se ilude facil ne filho?), joga verde pra colher maduro e dizer que tem muita opção.
+### ao inves de ficar fazendo esforço com varias ilusões seria muito mais facil usar toda essa tua dedicação pra criar um relacionamento decente  não acha ?
+### inclusive, faça um exame de consciencia e desfaça suas gracinhas e pare de criar novas.
+### espere um presente meu inclusive, fiquei tão feliz descobrindo isso que pensei pq não te retribuir, me desculpe se eu exagerar, é que não sei a dose sabe ^-^
+### faça um exame de consciencia profundo, se eu descobrir mais alguma dessas, minha gentileza acabou.
+### seja homem e aja de forma decente, isso é coisa de menino novo, epoca pra brincar sem medir nem pensar nas consequencias e sem saber ate onde vai brincadeira e fela da putagem passou ja. 
+### lhe falta discernimento.
+
 ---
 
 > “hoje vou lhes contar uma história, de uma pequena menina antes de encontrar uma estrelinha caída. quer ouvir uma história?”
