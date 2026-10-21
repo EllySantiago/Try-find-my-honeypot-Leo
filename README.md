@@ -9,20 +9,8 @@
 
 </div>
 
-### de seus pulo e corrija isso, use a imaginação e desfaça essa teia que tu mesmo fez. 
-
-### icaro, isso não é legal cara, não é brincadeira nem coisa que se faça isso é serio, é por esse tipo de coisa que te mando ir pro psicologo, nem comigo nem com ninguem isso é algo legal. eu fui pedir conselhos a lua pra dar um presente pra pessoa que gosto e escuto " mas sera que a pessoa que voce gosta quer receber o presente?".
-
-### tu é uma pessoa insegura e cria essas narrativa pra fugir da realidade e se sentir amado pelo amor que voce não recebe . afeto verdadeiro voce corrompe mentindo e usando a mesma tecnica pq no fundo voce não se considera digno e acha que por isso não vai receber afeto. va pro psicologo e discuta sua insegurança profunda. isso é coisa que se pensa nas consequencias, isso é imaturidade sua, tem situação que a gente paga de doido e se faz de sonso quando a pessoa faz algo serio conosco mas nunca é o caso contigo, te conheço, tu faz isso com as minas do trabalho tbm(e praticamente toda menina que cruza teu caminho, tu se ilude facil ne filho?), joga verde pra colher maduro e dizer que tem muita opção.
-
-### ao inves de ficar fazendo esforço com varias ilusões seria muito mais facil usar toda essa tua dedicação pra criar um relacionamento decente  não acha ?
-
-### inclusive, faça um exame de consciencia e desfaça suas gracinhas e pare de criar novas.
-### espere um presente meu inclusive, fiquei tão feliz descobrindo isso que pensei pq não te retribuir, me desculpe se eu exagerar, é que não sei a dose sabe ^-^
-### faça um exame de consciencia profundo, se eu descobrir mais alguma dessas, minha gentileza acabou.
-### seja homem e aja de forma decente, isso é coisa de menino novo, epoca pra brincar sem medir nem pensar nas consequencias e sem saber ate onde vai brincadeira e fela da putagem passou ja. 
-### lhe falta discernimento.
-### converse com alguem, icaro eu quero que tu cuide da mente(p.s.i.c.o.l.o.g.o), eu sou intensa, não prefira ficar doido comigo vei, eu quero me aproximar de voce, e quero saber que voce fica, não por dependencia emocional ou qualquer coisa mas por escolha de ficar, que não precise nem deseje desesperadamente minha atenção a todo preço mas ainda assim escolha ficar, eu sou assim contigo, eu quero parar de sair descobrindo as coisas assim, quero me aproximar de tu no mundo real, como eramos no começo, eu sinto saudades de voce e sabe o pior é que nem é como se a gente não se visse, falta pouco tempo pro ano acabar, eu sei que tu é fechado, mas ja parou pra pensar como a gente vai se ver e se falar quando a faculdade acabar? eu queria conversar mesmo, eu sei que tu fica inseguro, mas cara eu to aqui. 
+### BICHA EU TO FELIIIIIIZ, pqp, eu tinh esquecido como amava bruxaria, eu tava jogando no modo dificil e me lembrei que tinha um negocio pra ter sorte, pqp, eu de otaria esquecendo disso, joguei fora meus rituais velho tbm to feliz, eu tenho um pouco de medo de ser julgada e quererem fazer algo comigo por eu ser bruxa assim mas vou indo( eu tinha esquecido meu pote de proteção quanto a saude e não tava so meu nome nele,corrompi mainha ao ponto que ela vem reclamar que não to cuidando das minhas coisas do oculto, tipo, eu falo com deus e ele escuta e responde, mas tem coisa que precisa de canal fisico ou precisa de gatilho, nem tudo eu controlo ent vou explicar ate ca, mas to feliz. meus guias me explicando as coisa quando ja descobri a metade é sempre uma experiencia gostosa, da pra ouvir que eles se divertem com minha revolta) mainha achava que isso era besteira até eu mostrar pra ela esse mundo e ela ve que era verdade, eu acendi uma vela e cantei um  salmo em hebraico e a chama ficou dançando com a musica, ela ficou um tempo me olhando estranho? talvez mas olhemos o lado bom, ela viu que era serio.
+### tu ja tava fazendo alguma coisa nao era? foi eu terminar de escrever o texto anterior que veio o pica pau cantar, obrigado icaro
 ### para de medo, bora se ver nas ferias, da um jeito, eu sei que tu não quer falar sobre o que a gente conversa aqui e o sentimento é mutuo, eu sou timida, se for eu e tu discutir o tanto de coisa e vezes que te chamei de bonito e gostoso, conheceras um pimentão.
 
 
