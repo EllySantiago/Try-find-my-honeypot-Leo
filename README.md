@@ -4,7 +4,7 @@
   <img src="banner.svg" alt="Terminal CRT Coquette — clique para abrir" width="800">
 </a>
 
-### buenas tardes pra tu, vou fazer um karaoke com as meninas na sala hj, antes de humberto chegar e presenciar nossas maluquice kkkkkkkk
+
 
 
 *✿ toque no monitor para abrir o terminal interativo ✿*
